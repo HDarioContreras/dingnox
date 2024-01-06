@@ -522,9 +522,13 @@ div.bloque-diseno{
         background-position: center;
         background-size: 100%;
         width: 100%;
-        height: 320px;
+    height: 300;
+       background-size: cover; /* Escala la imagen para que cubra todo el contenedor sin distorsionarla */
+background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+
         border: 1px solid #d9dadc;
         margin-bottom: 15px;
+    overflow:hidden;
 }
 div.bloque-diseno:after {
     content:"";
@@ -534,6 +538,7 @@ div.bloque-diseno:after {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 255, 0.3); /* Color azul semitransparente */
+    
 }
 .t_optimiza {
         position:absolute;
