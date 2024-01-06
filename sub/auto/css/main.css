@@ -970,21 +970,21 @@ div.auto-general{
 	.m-info{
 		width: 60%;
 	}
-		.titulo-a{
-			padding:0;
-			color: #27348b;
-			text-align: center;
-			font-size: 1.3em;
-			font-weight: bold;
-		}
-		.descripcion-a{
-			height: auto;
-			padding: 1% 5% 1% 5%;
-			color: rgba(0, 0, 0, 1);
-			text-align: justify;
-			font-size: 1.2em;
-  		}
-
+    .titulo-a{
+        padding:0;
+        color: #27348b;
+        text-align: center;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .descripcion-a{
+        height: auto;
+        padding: 1% 5% 1% 5%;
+        color: rgba(0, 0, 0, 1);
+        text-align: justify;
+        font-size: 1.2em;
+    }
+   
 .swiper-container{
 	height: 100%;
 	border-bottom: 0px;
