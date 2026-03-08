@@ -5,6 +5,7 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 <title>Feliz Día de la Mujer</title>
 
@@ -13,7 +14,7 @@
 body{
 margin:0;
 background:black;
-font-family:Arial;
+font-family:'Great Vibes', cursive;
 color:white;
 text-align:center;
 overflow-x:hidden;
@@ -122,7 +123,10 @@ opacity:0.95;
 
 </style>
 
+
 </head>
+
+
 
 <body>
 
@@ -195,13 +199,13 @@ opacity:0.95;
 <div class="mensajeFinal" id="mensaje">
 
 <p>
-Hoy celebramos la fuerza,  
-la sensibilidad y la belleza  
-que hay en ti.
+Hoy no celebro a una si no a dos mujeres que llegaron a mi vida.
 </p>
-
 <p>
-Que nunca olvides lo extraordinaria que eres.
+Eres una mujer muy fuerte y capaz de enfrentarse a todo, que orgulloso estoy de ti. 
+</p>
+<p>
+Nunca olvides lo extraordinaria que eres.
 </p>
 
 <h3>Feliz Día de la Mujer 🌼</h3>
@@ -214,6 +218,9 @@ Que nunca olvides lo extraordinaria que eres.
 function mostrarGaleria(){
 
 document.getElementById("galeria").style.display="block"
+
+let musica = document.getElementById("musica")
+musica.play()
 
 slideIndex = 0
 mostrarSlide()
@@ -252,6 +259,10 @@ document.getElementById("mensaje").style.display="block"
 }
 
 </script>
+
+<audio id="musica" loop>
+<source src="ss.mpeg" type="audio/mpeg">
+</audio>
 
 </body>
 </html>
