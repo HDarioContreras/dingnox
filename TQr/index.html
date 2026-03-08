@@ -211,58 +211,39 @@ Que nunca olvides lo extraordinaria que eres.
 </div>
 
 <script>
-
 function mostrarGaleria(){
 
 document.getElementById("galeria").style.display="block"
-mostrarSlide(0)
+
+slideIndex = 0
+mostrarSlide()
 
 }
 
-let slideIndex=0
-let slides=document.getElementsByClassName("slide")
+/* slider automatico */
 
-function mostrarSlide(n){
+let slideIndex = 0
+let slides = document.getElementsByClassName("slide")
+
+function mostrarSlide(){
 
 for(let i=0;i<slides.length;i++){
-
 slides[i].style.display="none"
-
 }
 
-slides[n].style.display="block"
-
-}
-
-let startX=0
-
-document.addEventListener("touchstart",e=>{
-startX=e.touches[0].clientX
-})
-
-document.addEventListener("touchend",e=>{
-
-let endX=e.changedTouches[0].clientX
-
-if(endX < startX-50){
 slideIndex++
+
+if(slideIndex > slides.length){
+slideIndex = 1
 }
 
-if(endX > startX+50){
-slideIndex--
+slides[slideIndex-1].style.display="block"
+
+setTimeout(mostrarSlide, 3000)
+
 }
 
-if(slideIndex>=slides.length){
-slideIndex=0
-}
-
-if(slideIndex<0){
-slideIndex=slides.length-1
-}
-
-mostrarSlide(slideIndex)
-
-})
+/* mensaje final */
 
 function mostrarMensaje(){
 
